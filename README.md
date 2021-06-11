@@ -25,20 +25,16 @@ Entity attributes allows you to show basic attributes from multiple entities.
 **Example**
 
 ```yaml
-- type: custom:entity-attributes-card
-  title: Attributes Card
-  heading_name: List
-  heading_state: States
-  filter:
-    include:
-      - key: climate.hvac.*
-      - key: media_player.bedroom.app_name
-        name: Application
-      - key: media_player.bedroom.media_title
-        name: Media center
-      - climate.heatpump.current_temperature
-      - vacuum.xiaomi_mi_robot.battery_level
-        unit: %
+entity: sensor.joy_ti_zhong
+filter:
+  include:
+     - key: sensor.joy_ti_zhong.重量
+     - key: sensor.joy_ti_zhong.BMI身体质量指数
+     - key: sensor.joy_ti_zhong.基本代谢
+     - key: sensor.joy_ti_zhong.内脏脂肪
+type: 'custom:entity-attributes-card'
+heading_name: Name
+heading_state: State
 ```
 
 How to embed this inside `entities` card:
