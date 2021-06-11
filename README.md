@@ -25,14 +25,14 @@ Entity attributes allows you to show basic attributes from multiple entities.
 **Example**
 
 ```yaml
-entity: sensor.joy_ti_zhong
+entity: sun.sun
 filter:
   include:
-     - key: sensor.joy_ti_zhong.重量
-     - key: sensor.joy_ti_zhong.BMI身体质量指数
-     - key: sensor.joy_ti_zhong.基本代谢
-     - key: sensor.joy_ti_zhong.内脏脂肪
-type: 'custom:entity-attributes-card'
+    - sun.sun.next_rising
+    - sun.sun.next_setting
+    - sun.sun.next_dawn
+    - sun.sun.next_dusk
+type: custom:entity-attributes-card
 heading_name: Name
 heading_state: State
 ```
